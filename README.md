@@ -46,8 +46,21 @@ We trained these models and measured their performance by $MAE$, $MSE$, and $R^2
 
 # Results
 ![](results.png)
+- The best model that can predict the popularity is **Random Forest** by using data from **smogn05 with LDS** with $R^2 = 0.82$ and $MSE = 229$.
+- Even though this model has the best performance, the smogn05 dataset has a lot of data that is out of bounds (popularity greater than 100). Therefore, we cannot include this dataset in the result.
+- Thus, the best model is **Random Forest**, which uses data from **smogn04 without LDS**, with $R^2 = 0.717$ and $MSE = 173$.
+- Balancing data is increasing by **295%** of model performance.
+- Random Forest exhibits robust performance on the `clean_df` dataset, suggesting it's well-suited for datasets without significant class imbalance or noise.
+- Model metrics fluctuate across different datasets (`clean_df` to `smogn_07_df`), which underscores the sensitivity of model performance to the nature of the dataset.
+- The application of LDS (likely a data sampling technique) does not consistently improve model performance, indicating that its benefits are situation-specific.
+- Some models, like Decision Trees, exhibit negative $R^2$ values on certain datasets, potentially indicating overfitting to the training data.
 
-# Limitations
+
+
+
+
+
+# Recommendations
 - Hyperparameter tuning for each model
 - Try to use manual tunning in SMOGN 
 - More features included such as artist popularity, album popularity
