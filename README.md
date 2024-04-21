@@ -1,8 +1,8 @@
 # SC1015 Project FCE3 Team1
-#### Members:
-- Kongkijpipat Peeranat &nbsp;&nbsp;(U2323360A)
-- Juirnarongrit Nathan &nbsp;&nbsp;&nbsp;&nbsp;(U2321878E)
-- Chananam Kulpatch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(U2320130D)
+### Contributors:
+- [Kongkijpipat Peeranat](https://github.com/autoastt) - EDA, Model 9-10
+- [Juirnarongrit Nathan](https://github.com/Saltykub) - DIR, Model 1-3
+- [Chananam Kulpatch](https://github.com/KFuniverse) - Data Visualization, Model 4-8
   
 # About
 In this project, we discovered a <a href='https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset?resource=download'>Kaggle dataset of Spotify songs</a> (`./data/dataset.csv`), which contains 20 features of the songs measured by Spotify. Our aim is to predict the songs' popularity based on the other features. Throughout the EDA, we have done data preprocessing using cutting-edge techniques (SMOGN and DIR) to deal with imbalanced distribution. Lastly, we decided to use different regression models to find the best model, which we will discuss later.
@@ -55,11 +55,6 @@ We trained these models and measured their performance by $MAE$, $MSE$, and $R^2
 - The application of LDS (likely a data sampling technique) does not consistently improve model performance, indicating that its benefits are situation-specific.
 - Some models, like Decision Trees, exhibit negative $R^2$ values on certain datasets, potentially indicating overfitting to the training data.
 
-
-
-
-
-
 # Recommendations
 - Hyperparameter tuning for each model
 - Try to use manual tunning in SMOGN 
@@ -68,6 +63,15 @@ We trained these models and measured their performance by $MAE$, $MSE$, and $R^2
 - Implement FDS to all epochs training 
 - Implement LDS to KNN and MLP  
 - Include unstructured data by using NLP model such as DistilBERT
+
+# What Do We Learn?
+- New ways to visualize the data
+- Cutting-edge techniques to handle inbalanced data: oversampling, undersampling, SMOGN, and DIR
+- Pratical models for solving nowadays problems
+- Understanding the concept behind Gradient Boosting Algorithm
+- Integrating complex models
+- Optimizing models' performance
+- Models' performance comparison and analysis
 
 # References
 - [Spotify Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset?resource=download)
