@@ -1,8 +1,8 @@
 # SC1015 Project FCE3 Team1
 ### Contributors:
-- [Kongkijpipat Peeranat](https://github.com/autoastt) - EDA, Model 9-10
-- [Juirnarongrit Nathan](https://github.com/Saltykub) - DIR, Model 1-3
-- [Chananam Kulpatch](https://github.com/KFuniverse) - Data Visualization, Model 4-8
+- [Kongkijpipat Peeranat](https://github.com/autoastt) - Data Preprocessing, SMOGN, and Model 9-10
+- [Juirnarongrit Nathan](https://github.com/Saltykub) - Data Preprocessing, DIR, and Model 1-3
+- [Chananam Kulpatch](https://github.com/KFuniverse) - Data Visualization and Model 4-8
   
 # About
 In this project, we discovered a <a href='https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset?resource=download'>Kaggle dataset of Spotify songs</a> (`./data/dataset.csv`), which contains 20 features of the songs measured by Spotify. Our aim is to predict the songs' popularity based on the other features. Throughout the EDA, we have done data preprocessing using cutting-edge techniques (SMOGN and DIR) to deal with imbalanced distribution. Lastly, we decided to use different regression models to find the best model, which we will discuss later.
